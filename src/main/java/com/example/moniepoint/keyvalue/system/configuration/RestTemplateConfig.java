@@ -1,0 +1,19 @@
+package com.example.moniepoint.keyvalue.system.configuration;
+
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
+
+@Configuration
+public class RestTemplateConfig {
+    @Bean
+    RestTemplate restTemplate(RestTemplateBuilder builder,ApplicationConfigs properties) {
+        return builder
+                .setConnectTimeout(properties.getHttpConnectTimeout())
+                .setReadTimeout(properties.getHttpReadTimeout())
+                .build();
+
+    }
+}
+
