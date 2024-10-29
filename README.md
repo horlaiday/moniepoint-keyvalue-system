@@ -4,9 +4,9 @@ A network-available persistent Key/Value system take home assignment.
 
 Please ensure your system has git and maven installed.
 
-Then go to your system command prompt(window user) and terminal(mac os)
+Then go to your system command prompt(window user) and terminal(mac-os)
 
-Copy and paste below command to a directory where you want to run this project.
+Copy and paste below command to a directory where you want to run the project.
 
 git clone https://github.com/horlaiday/moniepoint-keyvalue-system.git
 
@@ -62,7 +62,7 @@ BONUS:
 1. Replicate data to multiple nodes
 2. Handle automatic failover to the other nodes
    
-To activates aboved 2 implementation, you will need to alter some values on the properties file
+To activates above 2 implementation, you will need to alter some values on the properties file
 
 locate:  replicate.data=false
 change to : replicate.data=true
@@ -73,3 +73,6 @@ follower.nodes={valid storage location}
 node.id={valid storage location}
 all.nodes={valid app-node, valid app-node}
 initial.leader=master-node
+
+
+...for immediate support call 2348032372090
