@@ -71,6 +71,5 @@ Also set correct location of your replica server/locations
 
 follower.nodes={valid storage location}
 node.id={valid storage location}
-leader.node=334
-all.nodes={valid storage location, valid storage location}
-initial.leader=http://localhost:8080
+all.nodes={valid app-node, valid app-node}
+initial.leader=master-node
