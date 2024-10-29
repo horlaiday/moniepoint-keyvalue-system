@@ -29,7 +29,7 @@ public class LeaderElectionService {
     }
 
 
-    // Periodically check if the current leader is up
+    // Heart Beat which periodically(5-secs) check if the current leader is up
     @Scheduled(fixedRate = 5000)
     public void monitorLeader() {
         if (isLeader.get()) {

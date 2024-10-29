@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.*;
 
 @RestController
-@RequestMapping("/api/store")
+@RequestMapping("/api/kvstore")
 public class KeyValueController {
     KeyValueLogger kvLogger = new KeyValueLogger(Constant.CONTROLLER);
     private final KeyValueComponent keyValueComponent;
